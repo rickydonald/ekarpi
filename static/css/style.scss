@@ -1,0 +1,206 @@
+// Variables
+@mixin flex {
+
+    display: flex;
+    width: 90%;
+    margin: auto    
+}
+
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+// Global Controller
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+// Header
+header{
+    
+    @include flex;
+
+    height: 15vh;
+    align-items: center
+
+}
+
+.logo{
+    flex: 1;
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.header-wrapper{
+    background: rgb(240, 240, 240);
+}
+
+.links{
+
+    @include flex;
+    width: 100%;
+
+    li{
+        list-style: none;
+    }
+    li a{
+        color: rgb(78, 78, 78);
+        padding: 15px;
+        text-decoration: none;
+    }
+    li a:hover{
+        text-decoration: underline;
+        text-underline-position: under;
+        text-underline-offset: 2px;
+    }
+
+}
+
+
+main{
+
+    @include flex;
+
+    height: 85vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+
+    p{
+        color: rgb(102, 102, 102);
+        width: 70%;
+    }
+
+    h1{
+        margin-bottom: 20px;
+    }
+
+    h5{
+        margin-top: 20px;
+    }
+
+    a{
+        color: black;
+        text-decoration: underline;
+        text-underline-position: under;
+        text-underline-offset: 3px;
+        margin-left: 3px;
+    }
+
+}
+
+.logo-container{
+    margin-right: 150px;
+
+    img{
+        filter: drop-shadow(2px 2px 20px grey);
+    }
+}
+
+.footer-wrapper{
+    background: rgb(240, 240, 240);
+}
+
+footer{
+
+    @include flex;
+    
+    height: 10vh;
+    align-items: center;
+    text-align: center;
+
+}
+
+.left-side{
+    flex: 1;
+}
+.right-side{
+
+    a{
+        color: rgb(78, 78, 78);
+        padding: 15px;
+        text-decoration: none;
+    }
+
+}
+.for_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    nav{
+        display: none;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    main{
+        flex-direction: column-reverse;
+        height: auto;
+        text-align: center;
+    }
+
+    .main-wrapper{
+        margin: 50px 0 50px 0;
+    }
+
+    .logo-container{
+
+        text-align: center;
+        margin: auto;
+        width: 180px;
+
+        img{
+            margin: auto;
+            width: 100%;
+        }
+
+    }
+
+    .text{
+
+        margin-top: 30px;
+
+        h1{
+            font-size: 30px;
+        }
+
+        p{
+            margin: auto;
+            width: 100%;
+        }
+    }
+
+    .for_mobile{
+        display: block;
+    }
+    footer{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 10%;
+        height: 20vh;
+    }
+    .right-side{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        a{
+           padding: 7px;
+        }
+    }
+    
+}
