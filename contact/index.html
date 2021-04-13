@@ -34,6 +34,15 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <script src="https://kit.fontawesome.com/137a1c837f.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    @media screen and (max-width: 1024px) {
+
+    main{
+        flex-direction: column;
+    }
+
+}
+</style>
 <body>
 
 <div class="header-wrapper">
@@ -56,14 +65,29 @@
     <main>
 
         <div class="text">
-            <h1>We are working on it!</h1>
-            <p>eKarpi is working hard on developing our official website. And also we are trying harder to create and upload content in our native language Thamizh and also English to understand easily. We will be available soon across the globe to provide free educational and syllabus resources. You can support us by donating your educational resources to us as soon as possible through our portal. Our main aim is to make quality content so, no one will get disappointed with our resources. We will be soon with new qualities and amazing quality education resources and contents.
+            <h1>Contact Us</h1>
+            <p>We are all ears to listen to your queries. Send us your message and queries we will reply it back within 7 working days.
             </p>
             <h5>Contact us at <a href="mailto:support@ekarpi.in">support@ekarpi.in</a></h5>
         </div>
 
-        <div class="logo-container">
-            <img src="/static/images/black-and-white-logo-ekarpi.png" width="300px" alt="eKarpi.in Logo" title="eKarpi.in Logo">
+        <div class="form-container">
+
+            <form action="https://formspree.io/f/xzbyblzj" method="POST">
+            
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Your Fullname" required>
+
+                <label for="email">Email address:</label>
+                <input type="email" name="email" id="email" placeholder="Your Email address" required>
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+
+                <button type="submit">Submit</button>
+
+            </form>
+            
         </div>
 
     </main>

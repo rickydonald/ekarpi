@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -119,7 +120,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
 }
 
 .left-side {
@@ -130,12 +130,52 @@ footer {
 
 .right-side a {
   color: #4e4e4e;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none;
+  font-size: 24px;
 }
 
-.for_mobile {
+.for__mobile {
   display: none;
+}
+
+form {
+  width: 500px;
+}
+
+form label {
+  font-weight: 500;
+}
+
+form button {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form input {
+  margin: 5px 0 20px 0;
+}
+
+form textarea {
+  margin: 5px 0 10px 0;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px black solid;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+  height: 200px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -175,7 +215,7 @@ footer {
     margin: auto;
     width: 100%;
   }
-  .for_mobile {
+  .for__mobile {
     display: block;
   }
   footer {
@@ -197,9 +237,27 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .right-side a {
     padding: 7px;
+    font-size: 16px;
+  }
+  .right-side .social-item {
+    margin-top: 5px;
+  }
+  .right-side .social-item a {
+    font-size: 20px;
+  }
+  form {
+    margin-top: 50px;
+    width: 100%;
+    background: #e6e6e6;
+    padding: 20px;
+    border-radius: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

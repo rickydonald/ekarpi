@@ -3,7 +3,7 @@
 <head>
 
     <!-- Primary Meta Tags -->
-<title>eKarpi.in - Open Educational Resources</title>
+<title>eகற்பி.in - இலவச கல்வி வளங்கள்</title>
 <meta name="title" content="eKarpi.in - Open Educational Resources">
 <meta name="description" content="eKarpi.in is an open educational resources site. Where you can get free educational resources and we provide the TN state board syllabus for free. Donate your educational resources too.">
 <meta name="keywords" content="ekarpi, Ekarpi, eKarpi.in, ekarpi.in, ekarpi oer, ekarpi 12th, dr. n. rekha, rekha, ekarpi open educational resources">
@@ -34,18 +34,50 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <script src="https://kit.fontawesome.com/137a1c837f.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    .text h1, .copyright__text p{
+        font-family: 'Mukta Malar';
+    }
+    .text p{
+        font-family: 'Mukta Malar';
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .text h5{
+        font-family: 'Mukta Malar';
+    }
+
+    .logo h1{
+        font-family: 'Mukta Malar';
+    }
+    .item{
+        font-family: 'Mukta Malar';
+        font-size: 18px;
+    }
+    label, input, textarea, button{
+        font-family: 'Mukta Malar';
+    }
+    @media screen and (max-width: 1024px) {
+
+    main{
+        flex-direction: column;
+    }
+
+}
+</style>
 <body>
 
 <div class="header-wrapper">
     <header>
         <div class="logo">
-            <a href="/"><h1>eKarpi.in</h1></a>
+            <a href="/ta"><h1>eகற்பி.in</h1></a>
         </div>
         <nav>
             <ul class="links">
-                <li><a href="#" class="item">Donate Resources</a></li>
-                <li><a href="/contact" class="item">Contact</a></li>
-                <li><a href="/ta/" class="item">Switch to Tamil Site</a></li>
+                <li><a href="#" class="item">நன்கொடை</a></li>
+                <li><a href="../contact/" class="item">தொடர்பு</a></li>
+                <li><a href="/" class="item">ஆங்கில தளத்திற்கு மாறவும்</a></li>
             </ul>
         </nav>
     </header>
@@ -56,14 +88,29 @@
     <main>
 
         <div class="text">
-            <h1>We are working on it!</h1>
-            <p>eKarpi is working hard on developing our official website. And also we are trying harder to create and upload content in our native language Thamizh and also English to understand easily. We will be available soon across the globe to provide free educational and syllabus resources. You can support us by donating your educational resources to us as soon as possible through our portal. Our main aim is to make quality content so, no one will get disappointed with our resources. We will be soon with new qualities and amazing quality education resources and contents.
+            <h1>தொடர்பு கொள்ளுங்கள்</h1>
+            <p>உங்கள் கேள்விகளை எங்களுக்கு அனுப்புங்கள் 7 நாட்களுக்குள் நாங்கள் உங்களுக்கு பதிலளிப்போம்.
             </p>
-            <h5>Contact us at <a href="mailto:support@ekarpi.in">support@ekarpi.in</a></h5>
+            <h5>எங்களை தொடர்பு கொள்ள <a href="mailto:support@ekarpi.in">support@ekarpi.in</a></h5>
         </div>
 
-        <div class="logo-container">
-            <img src="/static/images/black-and-white-logo-ekarpi.png" width="300px" alt="eKarpi.in Logo" title="eKarpi.in Logo">
+        <div class="form-container">
+
+            <form action="https://formspree.io/f/xzbyblzj" method="POST">
+            
+                <label for="name">பெயர்:</label>
+                <input type="text" name="name" id="name" placeholder="உங்கள் பெயர்" required>
+
+                <label for="email">மின்னஞ்சல் முகவரி:</label>
+                <input type="email" name="email" id="email" placeholder="உங்கள் மின்னஞ்சல் முகவரி" required>
+
+                <label for="message">செய்தி:</label>
+                <textarea name="message" id="message" placeholder="உங்கள் சந்தேகங்கள்" required></textarea>
+
+                <button type="submit">சமர்ப்பிக்கவும்</button>
+
+            </form>
+            
         </div>
 
     </main>
@@ -74,15 +121,15 @@
     <footer>
         <div class="left-side">
             <div class="copyright__text">
-                <p>eKarpi.in &copy; 2021</p>
+                <p>eகற்பி.in &copy; 2021</p>
             </div>
         </div>
         <div class="right-side">
 
             <div class="for__mobile">
-            <a href="#" class="footer-links">Donate Resources</a>
-            <a href="/contact" class="footer-links">Contact</a>
-            <a href="/ta" class="footer-links">Switch to Tamil Site</a>
+            <a href="#" class="footer-links">நன்கொடை</a>
+            <a href="../contact/" class="footer-links">தொடர்பு</a>
+            <a href="/" class="item">ஆங்கில தளத்திற்கு மாறவும்</a>
             </div>
 
             <div class="social-item">
